@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Helvetica', sans-serif;
-      background: url("https://kalehabernet.teimg.com/kalehaber-net/uploads/2024/05/siber-birim-1487007.jpg")no-repeat center center fixed;
+      background: url("https://kalehabernet.teimg.com/kalehaber-net/uploads/2024/05/siber-birim-1487007.jpg") no-repeat center center fixed;
       background-size: cover;
       color: white;
       display: flex;
@@ -21,10 +21,10 @@
       width: 90%;
       max-width: 400px;
       text-align: center;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0, 0, 0, 0.5);
       border-radius: 15px;
       padding: 30px 20px;
-      box-shadow: 0 0 15px rgba(0,255,255,0.5);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     }
     .avatar {
       width: 120px;
@@ -34,7 +34,7 @@
       object-fit: cover;
       margin-bottom: 15px;
     }
-    h1 {wraitzx}
+    h1 {
       margin: 0;
       font-size: 24px;
       color: cyan;
@@ -50,7 +50,7 @@
       padding: 12px;
       text-decoration: none;
       color: white;
-      background: rgba(0,0,0,0.7);
+      background: rgba(0, 0, 0, 0.7);
       border: 1px solid cyan;
       border-radius: 8px;
       transition: background 0.3s, color 0.3s;
@@ -59,20 +59,31 @@
       background: cyan;
       color: black;
     }
-    #playButton {
+    /* 🎵 Müzik ve Link Butonları */
+    .button-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
       margin-top: 20px;
+    }
+    #playButton, .link-button {
       padding: 10px 20px;
       font-size: 16px;
       color: white;
-      background: rgba(0,0,0,0.7);
+      background: rgba(0, 0, 0, 0.7);
       border: 1px solid cyan;
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.3s, color 0.3s;
     }
-    #playButton:hover {
+    #playButton:hover, .link-button:hover {
       background: cyan;
       color: black;
+    }
+    .link-button {
+      text-decoration: none;
+      display: inline-block;
     }
   </style>
 </head>
@@ -80,12 +91,14 @@
   <div class="container">
     <img class="avatar" src="https://www.polishaberleri.org/images/haberler/2020/11/siber-sube-mudurlugu-istanbul-merkezli-duzenlenen-operasyonda-51-kisi-gozaltina-alindi_m.jpg" alt="Profil Resmi">
     <h1>wrastzx</h1>
-    <p class="bio">Yıkamassın sarsamassın şansın yokkkk
-    <button id="playButton">🎵 Müziği Başlat</button>
-    <audio id="music" src="zehirr.mp3"></audio>
+    <p class="bio">Yıkamassın sarsamassın şansın yokkkk</p>
 
-    <div class="links">
-     </div>
+    <div class="button-row">
+      <button id="playButton">🎵 Müziği Başlat</button>
+      <a href="https://discord.com/users/1160997515232030750" target="_blank" class="link-button">🌐 Siteye Git</a>
+    </div>
+
+    <audio id="music" src="zehirr.mp3"></audio>
   </div>
 
   <script>
@@ -103,4 +116,3 @@
   </script>
 </body>
 </html>
-
